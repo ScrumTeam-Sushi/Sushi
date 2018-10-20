@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title> CS Sushi</title> 
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+       
+
+
+
+    <body>
+    
+<!--
+    <div style="border: double red;">
+    <div style="background:url(images/pic.jpeg);"></div>
+-->
+    
+<!--    <img class="logo" src="images/SushiLogo.png" width="100px" height="80px">-->
+    
+        <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Order Online</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    
+        <style>
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #C0D2BE;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #FAF9F9;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+        </style>
+    
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+    
+        
+        
+        <div> 
+<!--can be image instead-->
+            <h2 class="billboard">Welcome to DevOps Sushi. We're known for all of our amazingly delicious sushi.</h2>
+        </div>
+    
+        <div id="banners">  
+        <div class="welcome_banner">
+            <h3>Welcome to sushi</h3>
+        </div>
+        
+        <div class="info_box">
+            <h5>DevOps Sushi has be ranked best sushi joint by members of the DevOps community consecutively since 1937. We know how to make some gooooood sushi. We have a variety of options to choose from! Mix and match or just some regular degular, any way you want it, that's the way we make it for you.  </h5>
+        </div>
+        
+        <div>
+            <img class="logo" src="images/SushiLogo.png" width="380px" height="350px">
+        <!-- this is where we can put some rotating images-->
+        </div>
+   
+<!--Auto image scrolling-->
+        <div class="img_scroll" style="max-width:500px">
+            <img class="sushi_pics" src="images/images%20(1).jpeg" style="width:100%">
+            <img class="sushi_pics" src="images/images%20(3).jpeg" style="width:100%">
+            <img class="sushi_pics" src="images/images%20(4).jpeg" style="width:100%">
+            <img class="sushi_pics" src="images/images%20(5).jpeg" style="width:100%">
+        </div>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("sushi_pics");
+                
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                
+                myIndex++;
+                
+                if (myIndex > x.length) {myIndex = 1}    
+                    x[myIndex-1].style.display = "block";  
+                    setTimeout(carousel, 3000);
+            }
+        </script>
+       
+         
+         
+         
+    </div>     
+
+        
+        
+    </body>
+        
+
+
+</html>
+
+
