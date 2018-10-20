@@ -1,0 +1,1 @@
+This folder contains the html, css, and images for the main webpage
