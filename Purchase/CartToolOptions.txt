@@ -1,0 +1,15 @@
+CART TOOL OPTIONS
+
+The following are potential options for "cart" software that we could use:
+
+1. Volusion ($25/month)
+https://www.volusion.com
+
+2. Shopify ($29/month)
+https://www.shopify.com
+
+3. X-Cart (Free)
+https://www.x-cart.com
+
+4. Magento (Free, OpenSource)
+https://magento.com
