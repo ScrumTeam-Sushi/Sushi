@@ -1,4 +1,5 @@
 *.DS_Store
 Sushi-inspo/*
 colors/*
-
+!*.xlsx
+!colors/Sushi-Palette.png
