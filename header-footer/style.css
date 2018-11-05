@@ -67,6 +67,13 @@ a {
   text-decoration: none;
 }
 
+br {
+    display: block;
+    margin-bottom: 2px;
+    font-size:2px;
+    line-height: 2px;
+ }
+
 /* header section styles
 /* ========================================== */
 #header {
@@ -119,4 +126,17 @@ footer {
 .social-icon li {
   list-style: none;
   display: inline-block;
+}
+
+.footer-title {
+    font-size: 25px;
+    color: white;
+    font-weight: 900
+}
+
+.address {
+    font-size: 12px;
+    color: #777
+    display: block;
+    line-height: 1.5
 }
