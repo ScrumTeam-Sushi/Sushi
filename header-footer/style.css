@@ -140,3 +140,8 @@ footer {
     display: block;
     line-height: 1.5
 }
+
+.legal {
+    font-size: 7px;
+    color: #777
+}
