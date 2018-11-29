@@ -1,0 +1,32 @@
+h1 {
+    color: #828282; 
+}
+
+/*
+body {
+    background-image: url(images/sushipattern2.jpg);
+}
+*/
+
+.row1 {
+    width: 100%;
+    text-align: center;
+}
+.column {
+    width: 100px;
+    display: inline-block;
+    zoom: 1;
+}
+
+
+.group-pic {
+    float: left;
+/*    position: fixed;*/
+    bottom: 10px;
+    left: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+

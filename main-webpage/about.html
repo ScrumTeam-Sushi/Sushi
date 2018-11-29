@@ -2,25 +2,191 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <link rel="stylesheet" type="text/css" href="about.css">
         <title>About</title> 
-    
+        
+        
+        
+    <style>
+        div.move { position:absolute; }
+        </style>
+    <script language="javascript">
+        var x = 5; //Starting x coord.
+        var y = 5; //Starting y coord.
+        var max_x = 1200; //maximum x coord.
+        var max_y = 700; //maximum y coord.
+        var xoffset = 10; //Move 10px every step
+        var yoffset = 10; //Move 10px every step
+        
+        function go()
+        {
+            moveLogo1()
+            moveLogo2()
+            moveLogo3()
+        }
+        function moveLogo1() {
+            x = x + xoffset;
+            y = y + yoffset;
+//Move the image to the new location
+        document.getElementById("vic").style.top = y+'px';
+        document.getElementById("vic").style.left = x+'px';
+   
+       
+            if ((x+xoffset > max_x) || (x+xoffset < 0))
+                xoffset *=-1;
+            if ((y+yoffset > max_y) || (y+yoffset < 0))
+                yoffset *=-1;
+            window.setTimeout('moveLogo1()',100);
+
+            }
+        function moveLogo2() {
+            x = x + xoffset;
+            y = y + yoffset;   
+            
+        document.getElementById("lee").style.top = y+'px';
+        document.getElementById("lee").style.left = x+'px';
+            
+           if ((x+xoffset > max_x) || (x+xoffset < 0))
+                xoffset *=-1;
+            if ((y+yoffset > max_y) || (y+yoffset < 0))
+                yoffset *=-1;
+            window.setTimeout('moveLogo2()',100);
+
+            }
+        function moveLogo3() {
+            x = x + xoffset;
+            y = y + yoffset;   
+            
+        document.getElementById("steph").style.top = y+'px';
+        document.getElementById("steph").style.left = x+'px';
+            
+           if ((x+xoffset > max_x) || (x+xoffset < 0))
+                xoffset *=-1;
+            if ((y+yoffset > max_y) || (y+yoffset < 0))
+                yoffset *=-1;
+            window.setTimeout('moveLogo3()',100);
+
+            }
+        </script>
     </head>
+
+    <body onload="go()">
+        
+            <div id="lee" class="move">
+                <img src="images/heads-Leelina1.jpg" width="100px" height="100px" />
+            <div id="steph" class="move">   
+                <img src="images/heads-stephen2.png" width="100px" height="100px" />
+            <div id="vic" class="move">  
+                <img src="images/heads-victoria1.jpg" width="100px" height="100px"  />
+            </div>
+            </div>
+            </div>
+     
+    
+    
        
 
-    <body>
+    
         <h1>About Us</h1>
-        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Senectus et netus et malesuada. Egestas dui id ornare arcu odio ut sem. Non sodales neque sodales ut. Duis at tellus at urna condimentum mattis. Eu tincidunt tortor aliquam nulla. Nec nam aliquam sem et. Id neque aliquam vestibulum morbi blandit. </div>
+        <h3>The Team Behind DevOps Sushi</h3>
+<!--
         
-        <div>Varius quam quisque id diam vel quam elementum pulvinar etiam. Quis blandit turpis cursus in hac habitasse platea dictumst. Pretium fusce id velit ut tortor. Quis imperdiet massa tincidunt nunc pulvinar sapien et. Nunc lobortis mattis aliquam faucibus. Ornare suspendisse sed nisi lacus sed viverra tellus in. Rhoncus aenean vel elit scelerisque mauris. </div>
+        <div class="row">
+        <div class="column">
+-->
+<!--            <img class="lee" src="images/heads-Leelina1.jpg" width="100px" height="100px">-->
        
-        <div>Gravida rutrum quisque non tellus orci ac auctor augue. Vulputate enim nulla aliquet porttitor lacus luctus. Varius sit amet mattis vulputate enim nulla aliquet. Vitae aliquet nec ullamcorper sit amet.</div>
+<!--
+        Leelina Dagim:
+           
+                <li>PhD at Sashimi School of Culinary Arts</li>
+                <li>Technical background in slicin N' dicin</li>
+                <li>Business background in black market wasabi imports</li>
+                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li>
+        
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="column">
+-->
+<!--             <img class="vic" src="images/heads-victoria1.jpg" width="100px" height="100px">-->
+        
+<!--
+        Victoria Ramos:
+           
+                <li>words</li>
+                <li>words</li>
+                <li>words</li>
+                <li>"words"</li>
+        
+        </div>
+        
+        <br>
+        <br>
+        
+        <div class="column">
+-->
+<!--           <img class="steph" src="images/heads-stephen1.jpg" width="100px" height="100px"> -->
+        
+<!--
+        Stephen Budniak:
+           
+                <li>words</li>
+                <li>words</li>
+                <li>words</li>
+                <li>"words"</li>
+        
+        </div>
+        </div>
+        <br>
+        <br>
+-->
+
+        
+        
+        
+        
+        <div class="row1">
+            <img class="lee" src="images/heads-Leelina1.jpg" width="100px" height="100px">
+        <div class="column">Leelina Dagim:
+           
+<!--
+                <li>PhD at Sashimi School of Culinary Arts</li>
+                <li>Technical background in slicin N' dicin</li>
+                <li>Business background in black market wasabi imports</li>
+                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li>
+-->
+                <li>words</li>
+                <li>words</li>
+                <li>words</li>
+                <li>"words"</li></div>
+            
+           <img class="vic" src="images/heads-victoria1.jpg" width="100px" height="100px"> 
+        <div class="column">Victoria Ramos:
+           
+                <li>words</li>
+                <li>words</li>
+                <li>words</li>
+                <li>"words"</li></div>
+            
+            <img class="steph" src="images/heads-stephen2.png" width="100px" height="100px">
+        <div class="column">Stephen Budniak:
+           
+                <li>words</li>
+                <li>words</li>
+                <li>words</li>
+                <li>"words"</li></div>
+        </div>
+        <img class="group-pic" src="images/group-bkgnd2.png" width="600px" height="400px">
+        
+<!--        heads bouncing around (JS)-->
+        
+        
+        
+
     
     </body>
-    
-    <style>
-        h1 {color: #828282; text-align: center;}
-        div {background-color: #C0D2BE; width: 700px; height: 100px; padding: 10px; margin: auto;}
-    </style>
     
 </html>
