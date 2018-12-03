@@ -1,20 +1,14 @@
+/*
 body {
-/*    background-color: #FAF9F9;*/
+    background-color: #FAF9F9;
     background-image:url(images/pic.jpeg);
     
     
 }
-
-/*
-.logo {
-    float: right;
-}
 */
 
 .billboard {
-/*    background: rgba(130, 130, 130, 0.9);*/
     background: rgba(255,221,190,0.5);
-    color: #FAF9F9;
     padding: 60px;
     margin: -48px -8px 10px -8px;
     text-align: center;

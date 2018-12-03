@@ -1,10 +1,14 @@
 h1 {
-    color: #828282; 
+    color: #FFFFFF; 
 }
 
 body {
     background-color:#C0D2BE; 
 /*  background-image: url(images/sushipattern2.jpg);*/
+}
+
+h3{
+    color: #FFFFFF;
 }
 
 .row1 {
@@ -15,23 +19,25 @@ body {
 .column {
     width: 100px;
     display: inline-block;
-    zoom: 1;
+    border: solid #FFFFFF 1px;
+    padding: 10px 20px 5px 20px;
 }
 
 
 .group-pic {
     float: right;
-    
     left: 10px;
     margin: 10px;
     padding: 10px;
 }
 
 .main_body {
+    border: double gray 1px;
+    color: #C0D2BE;
+    background-color: #FFFFFF;
     padding: 10px;
     width: 75%;
     margin: auto;
-    border: solid black;
 }
 
 .column {
