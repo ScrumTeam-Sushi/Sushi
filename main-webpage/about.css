@@ -2,16 +2,16 @@ h1 {
     color: #828282; 
 }
 
-/*
 body {
-    background-image: url(images/sushipattern2.jpg);
+    background-color:#C0D2BE; 
+/*  background-image: url(images/sushipattern2.jpg);*/
 }
-*/
 
 .row1 {
-    width: 100%;
-    text-align: center;
+    margin: auto;
+    padding: 20px;
 }
+
 .column {
     width: 100px;
     display: inline-block;
@@ -20,13 +20,23 @@ body {
 
 
 .group-pic {
-    float: left;
-/*    position: fixed;*/
-    bottom: 10px;
+    float: right;
+    
     left: 10px;
     margin: 10px;
     padding: 10px;
 }
 
+.main_body {
+    padding: 10px;
+    width: 75%;
+    margin: auto;
+    border: solid black;
+}
 
-
+.column {
+    width: 50%;
+}
+.group {
+    width: 50%;
+}

@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="about.css">
         <title>About</title> 
         
-        
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+<!--        <a href="menu.html">Menu</a>-->
+<!--        <a href="order.html">Order Online</a>-->
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="legal.html">Policy</a>
+        </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    
+        <style>
+
+            .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #C0D2BE;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            }
+
+            .sidenav a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #FAF9F9;
+                display: block;
+                transition: 0.3s;
+            }
+
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+
+            .sidenav .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+            }
+        </style>
+    
+        <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>    
         
     <style>
         div.move { position:absolute; }
@@ -73,11 +138,11 @@
     <body onload="go()">
         
             <div id="lee" class="move">
-                <img src="images/heads-Leelina1.jpg" width="100px" height="100px" />
+                <img src="images/heads-leelina3.png" width="350px" height="200px" />
             <div id="steph" class="move">   
                 <img src="images/heads-stephen2.png" width="100px" height="100px" />
             <div id="vic" class="move">  
-                <img src="images/heads-victoria1.jpg" width="100px" height="100px"  />
+                <img src="images/heads-victoria2.png" width="350px" height="200px"  />
             </div>
             </div>
             </div>
@@ -89,101 +154,58 @@
     
         <h1>About Us</h1>
         <h3>The Team Behind DevOps Sushi</h3>
-<!--
-        
-        <div class="row">
-        <div class="column">
--->
-<!--            <img class="lee" src="images/heads-Leelina1.jpg" width="100px" height="100px">-->
-       
-<!--
-        Leelina Dagim:
-           
-                <li>PhD at Sashimi School of Culinary Arts</li>
-                <li>Technical background in slicin N' dicin</li>
-                <li>Business background in black market wasabi imports</li>
-                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li>
-        
-        </div>
-        
-        <br>
-        <br>
-        
-        <div class="column">
--->
-<!--             <img class="vic" src="images/heads-victoria1.jpg" width="100px" height="100px">-->
-        
-<!--
-        Victoria Ramos:
-           
-                <li>words</li>
-                <li>words</li>
-                <li>words</li>
-                <li>"words"</li>
-        
-        </div>
-        
-        <br>
-        <br>
-        
-        <div class="column">
--->
-<!--           <img class="steph" src="images/heads-stephen1.jpg" width="100px" height="100px"> -->
-        
-<!--
-        Stephen Budniak:
-           
-                <li>words</li>
-                <li>words</li>
-                <li>words</li>
-                <li>"words"</li>
-        
-        </div>
-        </div>
-        <br>
-        <br>
--->
 
-        
-        
-        
+
+        <div class="main_body">
+          
+            <p>Our Sushi passions brought us together. As children, all three of the founders developed a passion for sushi whcih we each used to create with our families. Our long-held family traditions of sushi prompted us to enter our spiritual sushi journey to Japan where we studied the ancient arts of sushi for years and years. Now, that we've developed our skills, we have decieded to return to Washington, DC to share our fantastic sushi with YOU, our prized customer. Enjoy!</p>
+        </div>
+
+    
+        <img class="group-pic" src="images/group-bkgnd2.png" width="600px" height="400px">
         
         <div class="row1">
-            <img class="lee" src="images/heads-Leelina1.jpg" width="100px" height="100px">
+            
+            <div class="group">
+            <img class="lee" src="images/heads-leelina4.png" width="100px" height="100px">
         <div class="column">Leelina Dagim:
            
-<!--
                 <li>PhD at Sashimi School of Culinary Arts</li>
                 <li>Technical background in slicin N' dicin</li>
                 <li>Business background in black market wasabi imports</li>
                 <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li>
--->
-                <li>words</li>
-                <li>words</li>
-                <li>words</li>
-                <li>"words"</li></div>
-            
-           <img class="vic" src="images/heads-victoria1.jpg" width="100px" height="100px"> 
+                </div>
+            </div>
+          <div class="group">
+              
+           <img class="vic" src="images/heads-victoria3.png" width="100px" height="100px"> 
+              
+              
         <div class="column">Victoria Ramos:
            
-                <li>words</li>
-                <li>words</li>
-                <li>words</li>
-                <li>"words"</li></div>
+                <li>PhD at Sashimi School of Culinary Arts</li>
+                <li>Technical background in slicin N' dicin</li>
+                <li>Business background in black market wasabi imports</li>
+                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li></div>
             
+            </div>
+             
+            <div class="group">
             <img class="steph" src="images/heads-stephen2.png" width="100px" height="100px">
         <div class="column">Stephen Budniak:
            
-                <li>words</li>
-                <li>words</li>
-                <li>words</li>
-                <li>"words"</li></div>
+                <li>PhD at Sashimi School of Culinary Arts</li>
+                <li>Technical background in slicin N' dicin</li>
+                <li>Business background in black market wasabi imports</li>
+                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li></div>
         </div>
-        <img class="group-pic" src="images/group-bkgnd2.png" width="600px" height="400px">
+            
+        </div>
         
-<!--        heads bouncing around (JS)-->
         
-        
+       
+
+    
         
 
     
