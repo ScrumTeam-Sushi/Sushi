@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="about.css">
-        <title>About</title> 
-        
+        <title>About</title>
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
@@ -19,7 +19,7 @@
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-    
+
         <style>
 
             .sidenav {
@@ -61,7 +61,7 @@
             .sidenav a {font-size: 18px;}
             }
         </style>
-    
+
         <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
@@ -70,8 +70,8 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-        </script>    
-        
+        </script>
+
     <style>
         div.move { position:absolute; }
         </style>
@@ -82,7 +82,7 @@
         var max_y = 700; //maximum y coord.
         var xoffset = 10; //Move 10px every step
         var yoffset = 10; //Move 10px every step
-        
+
         function go()
         {
             moveLogo1()
@@ -95,8 +95,8 @@
 //Move the image to the new location
         document.getElementById("vic").style.top = y+'px';
         document.getElementById("vic").style.left = x+'px';
-   
-       
+
+
             if ((x+xoffset > max_x) || (x+xoffset < 0))
                 xoffset *=-1;
             if ((y+yoffset > max_y) || (y+yoffset < 0))
@@ -106,11 +106,11 @@
             }
         function moveLogo2() {
             x = x + xoffset;
-            y = y + yoffset;   
-            
+            y = y + yoffset;
+
         document.getElementById("lee").style.top = y+'px';
         document.getElementById("lee").style.left = x+'px';
-            
+
            if ((x+xoffset > max_x) || (x+xoffset < 0))
                 xoffset *=-1;
             if ((y+yoffset > max_y) || (y+yoffset < 0))
@@ -120,11 +120,11 @@
             }
         function moveLogo3() {
             x = x + xoffset;
-            y = y + yoffset;   
-            
+            y = y + yoffset;
+
         document.getElementById("steph").style.top = y+'px';
         document.getElementById("steph").style.left = x+'px';
-            
+
            if ((x+xoffset > max_x) || (x+xoffset < 0))
                 xoffset *=-1;
             if ((y+yoffset > max_y) || (y+yoffset < 0))
@@ -136,40 +136,40 @@
     </head>
 
     <body onload="go()">
-        
+
             <div id="lee" class="move">
                 <img src="images/heads-leelina3.png" width="350px" height="200px" />
-            <div id="steph" class="move">   
+            <div id="steph" class="move">
                 <img src="images/heads-stephen2.png" width="100px" height="100px" />
-            <div id="vic" class="move">  
+            <div id="vic" class="move">
                 <img src="images/heads-victoria2.png" width="350px" height="200px"  />
             </div>
             </div>
             </div>
-     
-    
-    
-       
 
-    
+
+
+
+
+
         <h1>About Us</h1>
         <h3>The Team Behind DevOps Sushi</h3>
 
 
         <div class="main_body">
-          
+
             <p>Our Sushi passions brought us together. As children, all three of the founders developed a passion for sushi whcih we each used to create with our families. Our long-held family traditions of sushi prompted us to enter our spiritual sushi journey to Japan where we studied the ancient arts of sushi for years and years. Now, that we've developed our skills, we have decieded to return to Washington, DC to share our fantastic sushi with YOU, our prized customer. Enjoy!</p>
         </div>
 
-    
+
         <img class="group-pic" src="images/group-bkgnd2.png" width="600px" height="400px">
-        
+
         <div class="row1">
-            
+
             <div class="group">
             <img class="lee" src="images/heads-leelina4.png" width="100px" height="100px">
         <div class="column">Leelina Dagim:
-           
+
                 <li>PhD at Sashimi School of Culinary Arts</li>
                 <li>Technical background in slicin N' dicin</li>
                 <li>Business background in black market wasabi imports</li>
@@ -177,38 +177,29 @@
                 </div>
             </div>
           <div class="group">
-              
-           <img class="vic" src="images/heads-victoria3.png" width="100px" height="100px"> 
-              
-              
+
+           <img class="vic" src="images/heads-victoria3.png" width="100px" height="100px">
+
+
         <div class="column">Victoria Ramos:
-           
-                <li>PhD at Sashimi School of Culinary Arts</li>
-                <li>Technical background in slicin N' dicin</li>
-                <li>Business background in black market wasabi imports</li>
-                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li></div>
-            
+
+                <li>PhD at Sushi School of Culinary Arts</li>
+                <li>Studied 25 years in Japan with master sushi chefs.</li>
+                <li>Passion for fishing and the sea for a very young age.</li>
+                <li>Lives in Hawaii, so she know ALL about fish. :)</li></div>
+
             </div>
-             
+
             <div class="group">
             <img class="steph" src="images/heads-stephen2.png" width="100px" height="100px">
         <div class="column">Stephen Budniak:
-           
+
                 <li>PhD at Sashimi School of Culinary Arts</li>
-                <li>Technical background in slicin N' dicin</li>
-                <li>Business background in black market wasabi imports</li>
-                <li>"My cousins tried to convince my parents they had the wrong baby when I was born."</li></div>
+                <li>Strong kitchen management skills</li>
+                <li>Specialty in salmon.</li>
+                <li>An avid love of the sea and all of the fish in it.</li></div>
         </div>
-            
         </div>
-        
-        
-       
-
-    
-        
-
-    
     </body>
-    
+
 </html>
